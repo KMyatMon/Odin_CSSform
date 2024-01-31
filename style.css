@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+	  display: flex;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.imgpart {
+	width: 30%;
+	height: 100vh;
+	float: left;
+	background-image: url('assets/eugene-golovesov-HehRH3kRGaU-unsplash.jpg');
+	background-size: 100%;
+}
+
+.title {
+	background-color: rgba(0, 0, 0, 0.65);
+	padding: 10px;
+	margin-top: 100px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+.title img {
+	width: 50px;
+	height:50px;
+}
+.title p{
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 42px;
+	font-weight: 800;
+}
+
+.formpart {
+	width: 70%;
+	height: 100vh;
+	float: left;
+	background-color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+.formpart .text-part {
+	padding: 75px 50px 0px;
+	p {
+		margin-bottom: 10px;
+	  font-size: 16px;
+	}
+	span {
+		font-style: italic;
+	}
+	h3 {
+		 padding: 10px 0;
+	}
+}
+
+form {
+	width: 100%;
+	font-size: 11px;
+}
+form table {
+	padding: 10px 50px 30px;
+	width: 100%;
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+ }
+form table tr td {
+	width: 50%;
+}
+form table tr td input {
+	width: 75%;
+	margin: 10px 0px 10px 0px;
+	height: 30px;
+	border: 2px solid #E5E7EB;
+}
+form table tr td p {
+	color: red;
+	display: none;
+}
+form table tr:nth-of-type(6) td input {
+  	border: 1px solid palevioletred;
+}
+form button {
+	width: 200px;
+	height: 40px;
+  margin: 30px 50px 5px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background: #596D48;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+form button:hover {
+  background: #fff;
+  color: darkgreen;
+  font-style: bold;
+  border: 3px solid darkgreen;
+}
+form p {
+	margin: 5px 50px 0px;
+  color: #000;
+  font-style: bold;
+  span {
+  	color: #596D48;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  imgpart {
+  	width: 100%;
+  }
+  formpart {
+  	width: 100%;
+  }
+	.title p{
+		color: #fff;
+		font-family: sans-serif;
+		font-size: 12px;
+	}
+}
